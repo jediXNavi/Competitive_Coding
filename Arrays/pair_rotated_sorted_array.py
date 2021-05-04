@@ -24,17 +24,17 @@ x = 22
 
 
 # Hashing technique
-# def findPair(array, sum_):
-#     hash_map = set()
-#     for elem in array:
-#         other_elem = sum_ - elem
-#         if other_elem in hash_map:
-#             print("Pair with sum:", (elem, other_elem))
-#             return 1
-#         hash_map.add(elem)
-#     print("No pair with sum", sum_)
-#
-# ans = findPair(arr, x)
+def findPair(array, sum_):
+    hash_map = set()
+    for elem in array:
+        other_elem = sum_ - elem
+        if other_elem in hash_map:
+            print("Pair with sum:", (elem, other_elem))
+            return 1
+        hash_map.add(elem)
+    print("No pair with sum", sum_)
+
+ans = findPair(arr, x)
 
 
 def find_pair_rotated(array, sum_):
